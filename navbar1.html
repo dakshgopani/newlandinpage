@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navbar </title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="navbar1"><a href="#" class="logo"><i class="ri-home-heart-fill"></i><span>Logo</span></a>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Resources <i class="fas fa-caret-down"></i></a></li>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="#">Notes</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Yt lectures</a></li>
+                    <li><a href="#">Mentorship</a></li>
+                </ul>
+            </div>
+            <li><a href="#footer">Contact</a></li>
+
+        </ul>
+        <div class="main">
+            <a href="#" class="user"><i class="ri-user-fill"></i>Sign In</a><br>
+            <a href="#">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <img src="thinking.jpg" height="710" width="1519" alt="" class="thinking">
+    <h2>Hello and Welcome to myDoorstepJob </h2>
+
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+    </script>
+    <footer class="last" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Stay Connected</h3>
+                    <p>We request you to stay connected with us and join over 1,000 people who receive an email once a
+                        week regarding new courses,some tips etc</p>
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="button">SignUp</button>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Phone : 020202-8585</li>
+                        <li>Email : daksh@</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow us</h3>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
